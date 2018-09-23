@@ -8,7 +8,8 @@
 3，git add filename
 	追踪文档
 
-4，git push original master
+4，git push origin master
 	提交到什么鬼master里
 
-5，
+5，git pull origin master
+	从githubz抓取最新的库？
