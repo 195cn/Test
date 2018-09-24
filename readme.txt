@@ -13,3 +13,5 @@
 
 5，git pull origin master
 	从githubz抓取最新的库？
+
+6，再尝试一下更新
