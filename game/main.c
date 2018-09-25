@@ -5,8 +5,9 @@
 void main()
 {
 	struct PLAYER a,b;
-	addplayer(&a,"hello",100,40,10);
+	addplayer(&a,"195",100,18,10);
 	outputplayer(&a);
-	addplayer(&b,"world",90,60,8);
+	addplayer(&b,"竹鼠a",90,23,8);
 	outputplayer(&b);
+	while(battle(&a,&b));
 }
