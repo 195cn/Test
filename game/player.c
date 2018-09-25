@@ -39,7 +39,6 @@ int fight(struct PLAYER *a,struct PLAYER *b)
 //a先手进行1回合战斗
 int fighttime(struct PLAYER *a,struct PLAYER *b)
 {
-	printf("回合开始:\n");
 	if(fight(a,b)) 
 		if(fight(b,a));
 		else
