@@ -15,3 +15,6 @@
 	从githubz抓取最新的库？
 
 6，再尝试一下更新
+
+7，git remote origin https://github.com/195cn/Test.git
+	添加远程仓库
