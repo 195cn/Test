@@ -8,8 +8,8 @@ double pop(void);
 
 #define MAXVAL 100
 
-int sp = 0;
-double val[MAXVAL];
+static int sp = 0;
+static double val[MAXVAL];
 
 void push(double f)
 {
