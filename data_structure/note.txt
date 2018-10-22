@@ -1,0 +1,8 @@
+For data structure learning.
+============================
+Data	:shu ju,chou xiang hua de ke guan shi wu.
+Data Element	:data de jiben danwei.
+Data Item	:goucheng data element de you duli hanyi ,buke fenge d zuixiao danwei.
+Data Object	:likely data element d jihe.
+Data Structure	:data elements's relationship,like linner,jihe,tree,tu. 
+Data Type:every data has a type
