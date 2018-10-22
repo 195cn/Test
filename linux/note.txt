@@ -1,0 +1,10 @@
+This is linux study note.
+=============================
+1.How to use Terminal.
+2.Shell is command explian mechine.
+3.Useful commman:touch,cd,pwd,Ctrl+c,find,Shift+PgUp,Shift+PgDn.
+4.ls *.txt
+5.touch love_{1..10}.txt
+6.* ?   [list]  [^list] [c1-c2] {sting1,string2,...}    {c1..c2}
+7.man
+
