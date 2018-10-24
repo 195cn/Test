@@ -8,3 +8,10 @@ This is linux study note.
 6.* ?   [list]  [^list] [c1-c2] {sting1,string2,...}    {c1..c2}
 7.man
 
+8.cd .. - /
+9.touch a new file
+10.mkdir is create a new empty directory.
+11.mkdir -p father/son/grandson
+12.cp test father/son/grandson
+13.cp -f dir1 dir2
+14.rm -rf dir
