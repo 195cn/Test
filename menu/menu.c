@@ -1,68 +1,31 @@
-/******************************************
-COPY RIGHT	:
+/*****************************
 File name	:menu.c
-Description	:menu's main fuction
 Author		:xbw
-Version		:1.1
-Date		:2018-10-26 11:35
-History		:
-******************************************/
+Date		:2018-10-31 11:46
+Description	:menu main
+****************************/
 
 #include<stdio.h>
-#include<stdlib.h>
+#include<string.h>
 
-#define TRUE 1
-#define FALSE 0
-#define CMD_MAX_LEN 128
-int Help();
-int Quit();
+#include"cmd.h"
 
-typedef struct DataNode
-{
-	char *cmd;
-	char *desc;
-	int (*handler)();
-	struct DataNode *next;
-}tDataNode;
+#define TRUE 	1
+#define FALSE 	0
+#define CMD_SIZE	128
 
-static tDataNode head[]=
-{
-	{"help","This is help command.",Help,&head[1]},
-	{"version","Menu version v1.0",NULL,&head[2]},
-	{"quit","Quit from menu",Quit,NULL}
-};
-
-int Help()
-{
-	printf("Menu list:\n");
-	tDataNode *p = head;
-	while(p != NULL)
-	{
-		printf("%s - %s\n",p->cmd,p->desc);
-		p = p->next;
-	}
-	return 0;
-}
-int Quit()
-{
-	exit(0);
-}
-void others()
-{
-	printf("Wrong command\n");
-}
 
 int main()
 {
-	//cmd line begins
+	char cmd[CMD_SIZE];
 	while(TRUE)
 	{
-		char cmd[CMD_MAX_LEN];
+		tDataNode *p = head;
 		printf("menu>");
 		scanf("%s",cmd);
-		tDataNode *p = head;
-		while(p != NULL) {
-			if(strcmp(p->cmd,cmd) == 0)
+		while(p != NULL)
+		{
+			if(strcmp(cmd,p->cmd) == 0)
 			{
 				printf("%s - %s\n",p->cmd,p->desc);
 				if(p->handler != NULL)

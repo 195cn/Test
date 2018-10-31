@@ -1,2 +1,2 @@
-menu: menu.c
-	gcc -o menu menu.c
+menu: menu.c cmd.h
+	gcc -o menu menu.c cmd.h
