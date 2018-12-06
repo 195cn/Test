@@ -1,2 +1,0 @@
-A menu program language.
-========================
